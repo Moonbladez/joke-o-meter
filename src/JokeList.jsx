@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+import "./jokelist.css";
+
 class JokeList extends Component {
 	static defaultProps = {
 		amountOfJokes: 10,
@@ -24,8 +26,12 @@ class JokeList extends Component {
 	render() {
 		return (
 			<div className='JokeList'>
-				<h1>Dad Jokes</h1>
-				<div className='JokeList-jokes'>
+				<div className='JokeList__sidebar'>
+					<h1 className='JokeList__title'>Dad Jokes</h1>
+					<img src='../smiley.svg' alt='' />
+				</div>
+
+				<div className='JokeList__jokes'>
 					{this.state.jokes.map((j) => (
 						<div>{j}</div>
 					))}
