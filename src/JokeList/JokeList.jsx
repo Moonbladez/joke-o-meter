@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Joke from "./Joke";
+import Joke from "../Joke/Joke";
 import { v4 as uuid } from "uuid";
-import "./jokelist.css";
+import "./jokelist.scss";
 import { FaRegLaughSquint } from "react-icons/fa";
 
 class JokeList extends Component {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FiArrowUp, FiArrowDown } from "react-icons/fi";
-import "./joke.css";
+import "./joke.scss";
 
 class Joke extends Component {
 	getColor() {
