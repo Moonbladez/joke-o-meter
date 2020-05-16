@@ -35,7 +35,32 @@
     background-color: #fefefe;
     align-self: center;
     width: 70%;
-    overflow: scroll;
+    overflow-y: scroll;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
 
+}
+
+.spin {
+    animation: fa-spin 2s infinite linear;
+}
+
+@keyframes fa-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+.spinner__icon {
+    font-size: 8rem;
+    color: yellow;
+}
+
+.spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
